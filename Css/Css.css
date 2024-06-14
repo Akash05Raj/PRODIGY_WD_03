@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+*{
+    color: #fff;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 97vh;
+    background: #000;
+    position: relative;
+    z-index: 0;
+}
+.card{
+    border: 1px solid #7f7979;
+    width: auto;
+    padding: 2rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+}
+.heading{
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    text-decoration: underline;
+}
+.frame{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.box{
+    width: 6rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.box .span0{
+    color: #0da5f1;
+}
+.box .span1{
+    color: #09ff11;
+}
+.box:hover{
+    background-image:radial-gradient(#9569958e 30%,#0000003b) ;
+}
+.br{
+    border-right: 4px solid #00ff6e;
+    
+}
+.bb{
+    border-bottom: 4px solid #00ff6e;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 80%;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.check_action{
+    font-size: 3rem;
+    width: 50%;
+    text-align: center;
+}
+.action_call{
+    background: #242524;
+    color: #f1780d;
+}
+.message{
+    margin-top: 2rem;
+    color: #f1780d;
+}
+#button{
+    border: 1px solid #e8e6e643;
+    background: transparent;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.3rem 2rem;
+    visibility: hidden;
+}
+.horizontal{
+    position: absolute;
+    z-index: 8;
+    width: 60%;
+    border-radius: 10rem;
+}
